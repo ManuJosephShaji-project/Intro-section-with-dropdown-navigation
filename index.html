@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-----Navbar-Section----->
+
+  <div class="head-container">
+    <!--Logo-image-->
+    <div class="logo">
+      <img src="./images/logo.svg" alt="logo">
+    </div>
+
+    <nav id="nav">
+      <!--feature-button-dropdown-->
+
+      <div class="features">
+
+        <button class="nav-btn">
+          <h3 class="headline-feature">Features</h3>
+          <img id="arrow-down-1" src="./images/icon-arrow-down.svg" alt="arrow-down">
+        </button>
+
+        <div class="nav-dropdown">
+          <ul class="dropdown">
+            <li>
+              <img src="./images/icon-todo.svg" alt="todo-list">
+              <a href="#">Todo List</a>
+            </li>
+            <li>
+              <img src="./images/icon-calendar.svg" alt="calendar">
+              <a href="#">Calendar</a>
+            </li>
+            <li>
+              <img src="./images/icon-reminders.svg" alt="reminders">
+              <a href="#">Reminders</a>
+            </li>
+            <li>
+              <img src="./images/icon-planning.svg" alt="planning">
+              <a href="#">Planning</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <!-----Company-Section----->
+
+      <div class="company">
+
+        <button class="nav-btn">
+          <h3 class="headline-company">company</h3>
+          <img id="arrow-down-2" src="./images/icon-arrow-down.svg" alt="arrow-down">
+        </button>
+
+        <div class="nav-dropdown-2">
+          <ul class="dropdown">
+            <li>
+              <a href="#">History</a>
+            </li>
+            <li>
+              <a href="#">Our Team</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!--nav-careers-section-->
+
+      <div class="careers">
+        <button class="nav-btn">
+          <h3>Careers</h3>
+        </button>
+      </div>
+
+      <!--nav-about-section-->
+
+      <div class="about">
+        <button class="nav-btn">
+          <h3>About</h3>
+        </button>
+      </div>
+
+      <!------Login-section------>
+
+      <div class="permission">
+        <button class="login">Login</button>
+        <button class="register">Register</button>
+      </div>
+
+      <div class="menu-icon-close" onclick="closeNav()">
+        <img class="icon-menu" src="./images/icon-close-menu.svg" alt="menu-icon">
+      </div>
+
+    </nav>
+
+    <div class="menu-icon-open" onclick="openNav()">
+      <img class="icon-menu" src="./images/icon-menu.svg" alt="menu-icon">
+    </div>
+
+  </div>
+
+  <main>
+    <div class="container">
+      <!----Body-content---->
+      <div class="main-container">
+        <div class="per-heading">
+          <h1>Make remote work</h1>
+        </div>
+        <div class="paragraph">
+          <p>Get your team in sync, no matter your location. Streamline processes,
+            create team rituals, and watch productivity soar.</p>
+        </div>
+        <div class="btn-info">
+          <button class="btn">Learn more</button>
+        </div>
+
+        <div class="sponser">
+          <div class="image-sponser">
+            <img src="./images/client-databiz.svg" alt="">
+          </div>
+         <div class="image-sponser">
+            <img src="./images/client-audiophile.svg" alt="">
+         </div>
+         <div class="image-sponser">
+             <img src="./images/client-meet.svg" alt="">
+         </div>
+         <div class="image-sponser">
+          <img src="./images/client-maker.svg" alt="">
+         </div>
+        </div>
+      </div>
+      <!----Hero-image----->
+      <div class="hero-image">
+       <img class="hero-image-desktop" src="./images/image-hero-desktop.png" alt="hero-image">
+       <img class="hero-image-mobile" src="./images/image-hero-mobile.png" alt="hero-image-mobile">
+      </div>
+
+    </div>
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
