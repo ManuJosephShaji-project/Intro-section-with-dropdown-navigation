@@ -326,7 +326,7 @@ a {
     .container {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr;
 
     }
 
@@ -338,6 +338,7 @@ a {
     .hero-image {
         grid-column: 1/2;
         grid-row: 1/2;
+        display: block;
     }
 
     .hero-image-desktop {
